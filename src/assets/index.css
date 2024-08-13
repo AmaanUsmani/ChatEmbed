@@ -436,17 +436,17 @@ textarea {
   padding: 10px 10px;
   font-family: 'Poppins', sans-serif;
 }
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
   div[part='bot'] {
-    width: 50% !important;
+    width: 100% !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     max-width: unset !important;
     max-height: unset !important;
-    height: 50% !important;
+    height: 100% !important;
     overflow: auto; 
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
     div[part='button'], div[class='flex flex-row items-center w-full h-[50px] absolute top-0 left-0 z-10'], .chatbot-container, .rounded-lg {
@@ -457,7 +457,7 @@ button {
   cursor: default !important;
 }
 
-} */
+}
 .tooltip {
   position: fixed;
   background: var(--tooltip-background-color, black);
